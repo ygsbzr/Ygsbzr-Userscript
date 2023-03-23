@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         AutoFill
 // @namespace    ygsbzr.zhihuishu
-// @version      1.0
+// @version      1.1
 // @description  A password and account auto fill tool for zhi-hui-shu(I am Lazy XD)
 // @author       ygsbzr
 // @match        https://passport.zhihuishu.com/login*
@@ -11,6 +11,9 @@
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
+// @updateURL    https://raw.githubusercontent.com/ygsbzr/Ygsbzr-Userscript/main/zhi-hui-shu/autofill.user.js
+// @downloadURL  https://raw.githubusercontent.com/ygsbzr/Ygsbzr-Userscript/main/zhi-hui-shu/autofill.user.js
+// @run-at document-end
 // ==/UserScript==
 
 (function () {
