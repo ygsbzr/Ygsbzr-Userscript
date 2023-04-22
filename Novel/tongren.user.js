@@ -13,7 +13,7 @@
 
 (function () {
     'use strict';
-    
+    RemoveADS();
 })();
 function RemoveADS(){
     var iframe=document.getElementsByTagName("iframe");
