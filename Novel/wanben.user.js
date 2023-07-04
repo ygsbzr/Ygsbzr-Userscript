@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remove ADV-Wanben
 // @namespace    Ygsbzr
-// @version      1.0
+// @version      1.1
 // @description  移除广告
 // @author       Ygsbzr
 // @match        https://m.xiaoshuowanben.com/*/*.html
@@ -16,6 +16,12 @@ var id;
     id = setInterval(function(){ RemoveADS() }, 1000);
 })();
 function RemoveADS(){
+    var adva=document.querySelectorAll("a");
+    adva.forEach(function(node){
+        if(!node.getAttribute("href").endsWith("html")){
+            node.remove();
+        }
+    });
     var advsib=document.querySelector("div[id=contentbox]");
     advsib.nextElementSibling.nextElementSibling.remove();
     clearInterval(id)
